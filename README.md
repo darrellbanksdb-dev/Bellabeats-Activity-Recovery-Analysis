@@ -1,4 +1,7 @@
 # Bellabeats Activity & Recovery Analysis
+**Darrell Banks**  
+Google Data Analytics Capstone | 2026
+
 
 ## Overview
 
@@ -51,6 +54,7 @@ Data was cleaned and standardized in BigQuery:
 ---
 
 ## Visualizations
+![Journey Map](outputs/journey_map.png)
 
 - Steps vs Calories (Scatter + Regression)
 - Sleep Efficiency by Step Band
