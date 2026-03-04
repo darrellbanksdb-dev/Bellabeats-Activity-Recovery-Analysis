@@ -1,0 +1,15 @@
+library(scales)
+
+ggplot(df, aes(x = total_steps, y = calories)) +
+  geom_point(alpha = 0.25, color = "#2C7FB8") +
+  geom_smooth(method = "lm", se = FALSE, color = "darkred") +
+  scale_x_continuous(labels = comma) +
+  scale_y_continuous(labels = comma) +
+  labs(
+    title = "Daily Steps vs Calories Burned",
+    subtitle = "Bellabeats User Activity Patterns",
+    x = "Total Steps",
+    y = "Calories Burned"
+  ) +
+  theme_minimal()
+
