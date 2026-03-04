@@ -1,0 +1,12 @@
+p1 <- ggplot(df_ss, aes(x = total_steps, y = minutes_asleep)) +
+  geom_point(alpha = 0.25) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(labels = comma) +
+  labs(
+    title = "More Steps, More Sleep?",
+    subtitle = "Daily steps vs. minutes asleep (with trend line)",
+    x = "Daily Steps",
+    y = "Minutes Asleep"
+  )
+
+p1
