@@ -1,0 +1,18 @@
+df_band <- df_ss %>%
+  mutate(step_band = case_when(
+    total_steps < 5000 ~ "Low (<5k)",
+    total_steps < 10000 ~ "Moderate (5k–9,999)",
+    TRUE ~ "High (10k+)"
+  ))
+
+p2 <- ggplot(df_band, aes(x = step_band, y = minutes_asleep)) +
+  geom_boxplot(outlier.alpha = 0.15) +
+  scale_y_continuous(labels = comma) +
+  labs(
+    title = "Sleep Outcomes Across Activity Levels",
+    subtitle = "Minutes asleep by step band (a simple user journey progression)",
+    x = "Step Band (Engagement Level)",
+    y = "Minutes Asleep"
+  )
+
+p2
