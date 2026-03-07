@@ -1,0 +1,9 @@
+SELECT
+  CASE
+    WHEN total_steps < 5000 THEN 'Low'
+    WHEN total_steps < 10000 THEN 'Moderate'
+    ELSE 'High'
+  END AS step_segment,
+  AVG(calories) AS avg_calories
+FROM `dbvision.Bell_Beat.bellabeats_daily_master`
+GROUP BY 1;
