@@ -54,7 +54,7 @@ Data was cleaned and standardized in BigQuery:
 ---
 
 ## Visualizations
-![Journey Map](outputs/journey_map.png)
+![Bellabeats_journey_Map_Exwcutive.r)
 
 - Steps vs Calories (Scatter + Regression)
 - Sleep Efficiency by Step Band
